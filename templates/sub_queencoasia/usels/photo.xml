@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selection>
+    <target result="pages">
+        <type module="photoalbum" method ="photo" />
+        <category>14</category>
+    </target>
+    <limit page="{1}">50</limit>
+</selection>

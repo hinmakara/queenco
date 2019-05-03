@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selection>
+	<target result="pages">
+		<type module="content" method="page" />
+		<type module="photoalbum" method="album" />
+		<type module="webforms" method="page" />
+		<type module="news" method="rubric" />
+		<category>{1}</category>
+	</target>
+	<property name="field-checkbox-disable" mode="not" value="1" />
+	<sort order="ascending">ord</sort>
+	<limit page="0">20</limit>
+</selection>

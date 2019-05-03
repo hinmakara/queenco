@@ -1,0 +1,147 @@
+<!ENTITY home "trang chủ ">
+<!ENTITY top "top">
+<!ENTITY search-default-text "tiềm kiếm mặ định">
+<!ENTITY see-full-video "xem  toàn bộ video">
+<!ENTITY about "Về chúng tôi">
+<!ENTITY contacts "Liên hệ">
+<!ENTITY newsletter "Bản tin">
+<!ENTITY more "Nhiều thông tin hơn">
+<!ENTITY more-info "Nhiều thông tin hơn">
+<!ENTITY booking-now "Đặt phòng ngay bây giờ">
+<!ENTITY booking "Đặt phòng">
+<!ENTITY read-more-and-booking "tìm hiểu thêm và đặt phòng">
+<!ENTITY from "from">
+<!ENTITY welcome "Xin chào">
+<!ENTITY errors "Lỗi">
+<!ENTITY error "Lỗi">
+<!ENTITY day "Ngày">
+<!ENTITY working-hours "Giờ làm việc">
+<!ENTITY price "Giá">
+<!ENTITY select-room "Chọn phòng">
+        <!ENTITY find-a-room "Find a room">
+
+<!--  rooms -->
+
+<!ENTITY room-size "Kích thước phòng">
+<!ENTITY room-view "phong cảnh phòng">
+<!ENTITY more-rooms "Nhiều phòng hơn">
+<!ENTITY more-photo "nhiều ảnh hơn">
+<!ENTITY review "Xem lại">
+
+
+<!ENTITY enter-captcha "nhập mã xác nhận khác">
+<!ENTITY reset-captcha "cài đặt lại mã xác nhận">
+
+<!ENTITY yes "Có">
+<!ENTITY no "không">
+<!ENTITY see_video "Xem video">
+
+<!-- Comment -->
+<!ENTITY send "Gởi">
+<!ENTITY login "Đăng nhập">
+<!ENTITY password "Mật khẩu">
+<!ENTITY log-in "Đăng nhập vào">
+<!ENTITY log-out "Thoát ra">
+<!ENTITY office "Văn phòng">
+<!ENTITY fill-form "Mẫu đăng ký">
+<!ENTITY registration "Đăng ký">
+<!ENTITY forget-password "Quên mật khẩu">
+<!ENTITY forget-button "Quên nút bấm">
+<!ENTITY forget-message "Quên tin nhắn">
+<!ENTITY on-fast-edit "chỉnh sửa nhanh">
+<!ENTITY to-admin "Người quản trị">
+<!ENTITY personal-info "Thông tin cá nhân">
+<!ENTITY pay "Thanh toán">
+<!ENTITY password-confirm "Xác nhận mật khẩu">
+<!ENTITY e-mail "E-mail">
+<!ENTITY name "Tên">
+<!ENTITY lname "tên">
+<!ENTITY fname "Họ và Tên">
+<!ENTITY registration-do "Đăng ký">
+<!ENTITY registration-done "Đã đăng ký">
+<!ENTITY registration-error "Đăng ký lỗi">
+<!ENTITY registration-error-user-exists "Đăng ký lỗi , tên người dùng đã tồn tại">
+<!ENTITY registration-activation-note "Đăng ký kích hoạt">
+<!ENTITY account-activated "tài khoản được kích hoạt">
+<!ENTITY activation-error "lỗi kích hoạt">
+<!ENTITY user-reauth " đăng nhập lại ">
+<!ENTITY save-changes "Lưu thay đổi">
+
+<!ENTITY news-archive "tin tức lưu trữ">
+<!ENTITY news-back "tin tức">
+<!ENTITY news-realted "tin tức liên quan">
+
+<!ENTITY blog-addpost "đăng">
+<!ENTITY comments "Bình luận ">
+<!ENTITY comment "Bình luận">
+<!ENTITY no-comments "không bình luận">
+<!ENTITY comment-body "Bình luận thân">
+<!ENTITY comment-submit "đăng bình luận">
+
+<!ENTITY empty-section-name "Tên">
+<!ENTITY comment-posted "Đăng">
+<!ENTITY comment-login "Đăng nhập">
+<!ENTITY comment-you-email "email của bạn">
+<!ENTITY comment-you-name "tên của bạn">
+<!ENTITY comment-title "Tiêu đề">
+<!ENTITY comment-message "tin nhắn">
+<!ENTITY comment-tags "thẻ">
+<!ENTITY comment-question "Câu hỏi">
+<!ENTITY comment-ask-question "hỏi – Câu hỏi">
+<!ENTITY comment-answer "Trả lời">
+<!ENTITY comment-answer-sent "trả lời – gởi">
+
+<!ENTITY previous-page "Trang trước">
+<!ENTITY next-page "Trang tiếp theo">
+
+<!ENTITY apply "áp dụng vào">
+<!ENTITY reset "cài đặt lại">
+
+<!ENTITY empty-page-name "tên">
+<!ENTITY empty-page-date "ngày">
+<!ENTITY empty-page-anons " thông báo lại ">
+<!ENTITY empty-page-content "nội dung">
+<!ENTITY empty "trống">
+
+<!ENTITY search "tìm kiếm">
+<!ENTITY search-founded-left "thông tin này được tìm thấy">
+<!ENTITY search-founded-right "theo yêu cầu của bạn">
+<!ENTITY search-founded-nothing "không tìm thấy ">
+
+<!ENTITY default-date-format "mặc định ngày">
+
+<!ENTITY empty-photo "/templates/queencoasia/images/logo-black.jpg">
+<!ENTITY show-photo "trình bày hình ảnh">
+
+<!ENTITY newsletters "Bản tin">
+<!ENTITY subscribe "đăng ký">
+
+<!ENTITY vote "khảo sát">
+<!ENTITY reply "trả lời">
+<!ENTITY total-votes "bỏ phiếu">
+<!ENTITY poll-no-results "thăm dò ý kiến không có kết quả">
+<!ENTITY votes-rate "tỷ lệ phiếu bầu">
+<!ENTITY votes-vote "đánh giá của bạn">
+<!ENTITY votes-title "bạn đã bình chọn">
+
+<!ENTITY download "Tải về">
+<!ENTITY download-file-name "tên tập tin ">
+<!ENTITY download-file-size "kích thước tập tin ">
+<!ENTITY download-part-one "nếu tải về không thành công trong 10 giây ">
+<!ENTITY download-part-two "hãy dùng đường dẫn này ">
+<!ENTITY max-file-size "kích thước tối đa tập tin được tải lên">
+<!ENTITY user-not-permitted " bạn không có quyền truy cập trang này">
+
+<!ENTITY mobile-mode-on "Điện thoại di động">
+<!ENTITY for-print "In ra">
+
+<!ENTITY recent-pages-block "các trang đươc khóa gần đây">
+<!ENTITY recent-pages-text "bạn vừa truy cập trang">
+<!ENTITY recent-pages-delete "xóa khỏi danh sách">
+<!ENTITY recent-pages-empty "danh sách các mặt hàng được xem gần đây là rỗng">
+<!ENTITY recent-pages-all "danh sách đầy đủ">
+
+<!ENTITY dispatch-you-to "bạn đã đăng ký  thành công nhận bản tin của chúng tôi ">
+<!ENTITY dispatch-you-from "bạn đã hủy bỏ đăng ký tuef thông báo">
+<!ENTITY dispatch-unsubscribe 'nếu bạn không muốn nhận bản tin từ chúng tôi nữa , hãy dùng'>
+<!ENTITY dispatch-unsubscribe-part 'đường dẫn này'>

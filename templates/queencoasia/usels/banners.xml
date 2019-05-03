@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Type id is it id modules banners look /admin/data/types/
+PlaseId is it id guide plase look /admin/data/guide_items/110/ where
+
+-->
+<selection>
+    <target result="objects">
+        <type id="id"/>
+    </target>
+    <property name="place">
+        <object>plaseid</object>
+    </property>
+</selection>

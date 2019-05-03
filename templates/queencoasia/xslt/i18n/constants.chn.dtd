@@ -1,0 +1,147 @@
+<!ENTITY home "主页">
+        <!ENTITY top "顶端">
+        <!ENTITY search-default-text "搜索">
+        <!ENTITY see-full-video "看視頻">
+        <!ENTITY about "关于">
+        <!ENTITY contacts "联系">
+        <!ENTITY newsletter "我们的新闻通讯">
+        <!ENTITY more "更多信息">
+        <!ENTITY more-info "更多信息">
+        <!ENTITY booking-now "现在预定">
+        <!ENTITY booking "儲備">
+        <!ENTITY find-a-room "Find a room">
+        <!ENTITY read-more-and-booking "总览和预定">
+        <!ENTITY from "從">
+        <!ENTITY welcome "歡迎">
+        <!ENTITY errors "錯誤">
+        <!ENTITY error "錯誤">
+        <!ENTITY day "天">
+        <!ENTITY working-hours "工作時間">
+        <!ENTITY price "价格">
+        <!ENTITY select-room "選擇房間">
+
+        <!--  rooms -->
+
+        <!ENTITY room-size "区域">
+        <!ENTITY room-view "客房視圖">
+        <!ENTITY more-rooms "更多的房間">
+        <!ENTITY more-photo "更多照片">
+        <!ENTITY review "評論">
+
+
+        <!ENTITY enter-captcha "輸入代碼">
+        <!ENTITY reset-captcha "重啟代碼">
+
+        <!ENTITY yes "是的">
+        <!ENTITY no "沒有">
+        <!ENTITY see_video "看視頻">
+
+        <!-- Comment -->
+        <!ENTITY send "發送">
+        <!ENTITY login "登錄">
+        <!ENTITY password "密碼">
+        <!ENTITY log-in "登錄">
+        <!ENTITY log-out "登出">
+        <!ENTITY office "辦公室">
+        <!ENTITY fill-form "填充表單">
+        <!ENTITY registration "註冊">
+        <!ENTITY forget-password "找回密碼">
+        <!ENTITY forget-button "發送您的密碼">
+        <!ENTITY forget-message "您的密碼發送到電子郵件">
+        <!ENTITY on-fast-edit "快速編輯">
+        <!ENTITY to-admin "到管理員">
+        <!ENTITY personal-info "個人信息">
+        <!ENTITY pay "工資">
+        <!ENTITY password-confirm "確認密碼">
+        <!ENTITY e-mail "電子郵件">
+        <!ENTITY name "名">
+        <!ENTITY lname "姓">
+        <!ENTITY fname "名">
+        <!ENTITY registration-do "註冊">
+        <!ENTITY registration-done "註冊完成">
+        <!ENTITY registration-error "註冊錯誤">
+        <!ENTITY registration-error-user-exists "註冊錯誤">
+        <!ENTITY registration-activation-note "查看你的電子郵件">
+        <!ENTITY account-activated "帳戶已激活">
+        <!ENTITY activation-error "錯誤">
+        <!ENTITY user-reauth "錯誤。 再試一次">
+        <!ENTITY save-changes "改變">
+
+        <!ENTITY news-archive "新聞檔案">
+        <!ENTITY news-back "新聞檔案">
+        <!ENTITY news-realted "同樣的消息">
+
+        <!ENTITY blog-addpost "添加帖子">
+        <!ENTITY comments "註釋">
+        <!ENTITY comment "註釋">
+        <!ENTITY no-comments "沒意見">
+        <!ENTITY comment-body "註釋">
+        <!ENTITY comment-submit "添加評論">
+
+        <!ENTITY empty-section-name "節名稱">
+        <!ENTITY comment-posted "評論發布">
+        <!ENTITY comment-login "登錄以獲取評論">
+        <!ENTITY comment-you-email "你的郵件">
+        <!ENTITY comment-you-name "你的名字">
+        <!ENTITY comment-title "標題">
+        <!ENTITY comment-message "信息">
+        <!ENTITY comment-tags "標籤">
+        <!ENTITY comment-question "題">
+        <!ENTITY comment-ask-question "題">
+        <!ENTITY comment-answer "回答">
+        <!ENTITY comment-answer-sent "答案已發送">
+
+        <!ENTITY previous-page "上一頁">
+        <!ENTITY next-page "下一頁">
+
+        <!ENTITY apply "應用">
+        <!ENTITY reset "重啟">
+
+        <!ENTITY empty-page-name "頁面名稱">
+        <!ENTITY empty-page-date "日期">
+        <!ENTITY empty-page-anons "anons">
+        <!ENTITY empty-page-content "內容">
+        <!ENTITY empty "空">
+
+        <!ENTITY search "搜索">
+        <!ENTITY search-founded-left "搜索">
+        <!ENTITY search-founded-right "搜索">
+        <!ENTITY search-founded-nothing "搜索毫無建樹">
+
+        <!ENTITY default-date-format "d.m.Y">
+
+        <!ENTITY empty-photo "/templates/queencoasia/images/logo-black.jpg">
+        <!ENTITY show-photo "顯示照片">
+
+        <!ENTITY newsletters "通訊">
+        <!ENTITY subscribe "訂閱">
+
+        <!ENTITY vote "投票">
+        <!ENTITY reply "回复">
+        <!ENTITY total-votes "所有投票">
+        <!ENTITY poll-no-results "投票沒有結果">
+        <!ENTITY votes-rate "評分">
+        <!ENTITY votes-vote "你的評分">
+        <!ENTITY votes-title "你已經投過票">
+
+        <!ENTITY download "下載">
+        <!ENTITY download-file-name "文件名">
+        <!ENTITY download-file-size "文件大小">
+        <!ENTITY download-part-one "下載">
+        <!ENTITY download-part-two "下載">
+        <!ENTITY max-file-size "上傳文件大小上限">
+        <!ENTITY user-not-permitted "您沒有訪問">
+
+        <!ENTITY mobile-mode-on "用於移動設備的版本">
+        <!ENTITY for-print "打印版本">
+
+        <!ENTITY recent-pages-block "最近的頁面">
+        <!ENTITY recent-pages-text "最近的頁面">
+        <!ENTITY recent-pages-delete "從列表中刪除">
+        <!ENTITY recent-pages-empty "最近查看的項目列表為空">
+        <!ENTITY recent-pages-all "完整列表">
+
+        <!ENTITY dispatch-you-to "您已訂閱了調度">
+        <!ENTITY dispatch-you-from "您已取消訂閱分發">
+        <!ENTITY dispatch-unsubscribe '調度取消訂閱'>
+        <!ENTITY dispatch-unsubscribe-part '調度取消訂閱'>

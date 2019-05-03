@@ -1,0 +1,148 @@
+<!ENTITY home "Home">
+<!ENTITY top "Top">
+<!ENTITY search-default-text "Search">
+<!ENTITY see-full-video "See full video">
+<!ENTITY about "About us">
+<!ENTITY contacts "Contacts us">
+<!ENTITY newsletter "Our newsletter">
+<!ENTITY more "More">
+<!ENTITY more-info "More info">
+<!ENTITY booking-now "Book Now">
+<!ENTITY booking "Book">
+<!ENTITY find-a-room "Find a room">
+<!ENTITY read-more-and-booking "Overview and book">
+<!ENTITY from "from">
+<!ENTITY welcome "Welcome">
+<!ENTITY errors "Errors">
+<!ENTITY error "Error">
+<!ENTITY day "day">
+<!ENTITY working-hours "Working hours">
+<!ENTITY price "price">
+<!ENTITY select-room "Select room">
+
+<!--  rooms -->
+
+<!ENTITY room-size "Area">
+<!ENTITY room-view "View">
+<!ENTITY more-rooms "Another rooms for you">
+<!ENTITY more-photo "Room photo">
+<!ENTITY review "Review">
+
+
+<!ENTITY enter-captcha "Enter the code">
+<!ENTITY reset-captcha "Reload the code">
+
+<!ENTITY yes "Yes">
+<!ENTITY no "No">
+<!ENTITY see_video "See the Video">
+
+<!-- Comment -->
+<!ENTITY send "Send">
+<!ENTITY login "Login">
+<!ENTITY password "Password">
+<!ENTITY log-in "Login">
+<!ENTITY log-out "Logout">
+<!ENTITY office "Office">
+<!ENTITY fill-form "">
+<!ENTITY registration "Registration">
+<!ENTITY forget-password "Forgot your password?">
+<!ENTITY forget-button "Resend password">
+<!ENTITY forget-message "Your password was sent to your e-mail.">
+<!ENTITY on-fast-edit "On Edit">
+<!ENTITY to-admin "To admin">
+<!ENTITY personal-info "Personal info">
+<!ENTITY pay "Pay">
+<!ENTITY password-confirm "Repeat the password">
+<!ENTITY e-mail "E-mail (required)">
+<!ENTITY name "Name">
+<!ENTITY lname "Last name">
+<!ENTITY fname "First name">
+<!ENTITY registration-do "Register now">
+<!ENTITY registration-done "You account was registered successfuly.">
+<!ENTITY registration-error "Error occured.">
+<!ENTITY registration-error-user-exists "User already exists.">
+<!ENTITY registration-activation-note "Please check your inbox and follow the link to activate your account.">
+<!ENTITY account-activated "Activation successful.">
+<!ENTITY activation-error "Incorrect activation code">
+<!ENTITY user-reauth "Incorrect login or password, please check and repeat.">
+<!ENTITY save-changes "Save changes">
+
+<!ENTITY news-archive "News archive">
+<!ENTITY news-back "Back to news archive">
+<!ENTITY news-realted "Related news">
+
+<!ENTITY blog-addpost "Add post">
+<!ENTITY comments "Comments">
+<!ENTITY comment "Comment">
+<!ENTITY no-comments "Not commented yet">
+<!ENTITY comment-body "Your comment">
+<!ENTITY comment-submit "Add comment">
+
+<!ENTITY empty-section-name "Section name">
+<!ENTITY comment-posted "Posted">
+<!ENTITY comment-login "Please, log in to add your comment">
+<!ENTITY comment-you-email "Your e-mail">
+<!ENTITY comment-you-name "Your name">
+<!ENTITY comment-title "Title">
+<!ENTITY comment-message "Message">
+<!ENTITY comment-tags "Tags">
+<!ENTITY comment-question "Question">
+<!ENTITY comment-ask-question "Ask question">
+<!ENTITY comment-answer "Answer">
+<!ENTITY comment-answer-sent "Your question is sent">
+
+<!ENTITY previous-page "Previous">
+<!ENTITY next-page "Next">
+
+<!ENTITY apply "Apply">
+<!ENTITY reset "Cancel">
+
+<!ENTITY empty-page-name "Page title">
+<!ENTITY empty-page-date "Date">
+<!ENTITY empty-page-anons "Announce">
+<!ENTITY empty-page-content "Content">
+<!ENTITY empty "Empty">
+
+<!ENTITY search "Search">
+<!ENTITY search-founded-left "By your request">
+<!ENTITY search-founded-right "found">
+<!ENTITY search-founded-nothing "nothing found">
+
+<!ENTITY default-date-format "d.m.Y">
+
+<!ENTITY empty-photo "/templates/queencoasia/images/logo-black.jpg">
+<!ENTITY show-photo "Show all pictures">
+
+<!ENTITY newsletters "Our newsletters">
+<!ENTITY subscribe "Subscribe">
+
+<!ENTITY vote "Poll">
+<!ENTITY reply "Vote">
+<!ENTITY total-votes "All votes">
+<!ENTITY poll-no-results "Poll no results">
+<!ENTITY votes-rate "Rating">
+<!ENTITY votes-vote "Your rating">
+<!ENTITY votes-title "You have already voted">
+
+<!ENTITY download "Download">
+<!ENTITY download-file-name "File name">
+<!ENTITY download-file-size "File size">
+<!ENTITY download-part-one "If downloading does not start in 10 seconds, use">
+<!ENTITY download-part-two "this link">
+<!ENTITY max-file-size "Maximum upload file size">
+<!ENTITY user-not-permitted "You are not permitted to view this content">
+
+<!ENTITY mobile-mode-on "Mobile view">
+<!ENTITY for-print "Print">
+
+<!ENTITY recent-pages-block "Last viewed">
+<!ENTITY recent-pages-text "Your recently visited items">
+<!ENTITY recent-pages-delete "Delete from list">
+<!ENTITY recent-pages-empty "Recently viewed items list is empty">
+<!ENTITY recent-pages-all "Full list">
+
+<!ENTITY dispatch-you-to "You are subscribed to dispatches">
+<!ENTITY dispatch-you-from "You are unsubscribed from dispatches">
+<!ENTITY dispatch-unsubscribe 'If you don’t want to receive our dispatch, you can unsubscribe from it, using a'>
+<!ENTITY dispatch-unsubscribe-part 'link'>
+

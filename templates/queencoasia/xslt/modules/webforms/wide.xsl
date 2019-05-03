@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xsl:stylesheet SYSTEM    "ulang://i18n/constants.dtd:file">
+
+<xsl:stylesheet version="1.0"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:date="http://exslt.org/dates-and-times"
+                xmlns:udt="http://umi-cms.ru/2007/UData/templates"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                exclude-result-prefixes="xsl date udt xlink">
+
+    <xsl:template match="udata[@module = 'webforms'][@method = 'add']" mode="wide">
+
+        <xsl:param name="page"/>
+        <section class="container-fluid clearfix">
+            <xsl:apply-templates select="$errors" />
+        <div class="col-xs-12 pull-center clearfix" id="wide-form">
+            <form method="post" action="{$lang-prefix}/webforms/send/"
+                  onsubmit="site.forms.data.save(this); return site.forms.data.check(this);" enctype="multipart/form-data" class="wide-form">
+                <input type="hidden" name="system_form_id" value="{/udata/@form_id}"/>
+                <input type="hidden" name="ref_onsuccess" value="{$lang-prefix}/webforms_posted/"/>
+                <xsl:apply-templates select="items" mode="wide-address"/>
+                <xsl:apply-templates select="groups/group" mode="wide-webforms">
+                    <xsl:with-param name="page" select="$page"/>
+                </xsl:apply-templates>
+                <div class="col-xs-12">
+                    <xsl:apply-templates select="document('udata://system/captcha/')/udata"/>
+                    <div class="form_element col-xs-4">
+                        <input type="submit" class="btn btn-primary black" value="&send;"/>
+                    </div>
+                </div>
+            </form>
+            <xsl:apply-templates select="$page//property[@name='field-form-content']/value" mode="wide-contents">
+                <xsl:with-param name="page" select="$page"/>
+            </xsl:apply-templates>
+        </div>
+        </section>
+    </xsl:template>
+
+    <xsl:template match="group" mode="wide-webforms">
+        <xsl:param name="page"/>
+        <div class="col-xs-12">
+            <h4><xsl:value-of select="@title"/></h4>
+            <xsl:apply-templates select="field" mode="wide-webforms">
+                <xsl:with-param name="page" select="$page"/>
+            </xsl:apply-templates>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="field" mode="wide-webforms">
+        <div class="form_element">
+
+                <xsl:apply-templates select="." mode="wide-webforms_required"/>
+                <xsl:apply-templates select="." mode="wide-webforms_input_type"/>
+           
+        </div>
+    </xsl:template>
+    <xsl:template match="field[@type = 'text' or @type='wysiwyg']" mode="wide-webforms">
+        <div class="form_element width-wide">
+            <label>
+                <xsl:apply-templates select="." mode="wide-webforms_required"/>
+                <xsl:apply-templates select="." mode="wide-webforms_input_type"/>
+            </label>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="field[@name='field-form-rules']" mode="wide-webforms">
+        <div class="form_element width-wide">
+            <label>
+                <xsl:apply-templates select="." mode="wide-webforms_required"/>
+                <xsl:apply-templates select="." mode="wide-webforms_input_type"/>
+            </label>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="field" mode="wide-webforms_input_type">
+        <input type="text" name="{@input_name}" placeholder="{@title}" class="styler"/>
+    </xsl:template>
+
+    <xsl:template match="field[@type = 'text' or @type='wysiwyg']" mode="wide-webforms_input_type">
+        <textarea name="{@input_name}" placeholder="{@title}" class="styler"></textarea>
+    </xsl:template>
+
+    <xsl:template match="field[@type = 'password']" mode="wide-webforms_input_type">
+        <input type="password" name="{@input_name}" value="" placeholder="{@title}" class="styler"/>
+    </xsl:template>
+
+    <xsl:template match="field[@type = 'date']" mode="wide-webforms">
+        <xsl:param name="now" select="document('udata://system/convertDate/now/(d/m/Y)')"/>
+
+        <div class="form_element">
+            <label class="required input-group date">
+                <input type="text" value="" name="{@input_name}" placeholder="{@title}" class="styler"
+                       data-provide="datepicker" data-date-autoclose="true" data-date-format="dd/mm/yyyy"
+                       data-date-start-date="{$now}"/>
+                <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-th"></i>
+                </span>
+
+            </label>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="field[@type = 'boolean']" mode="wide-webforms_input_type">
+        <label>
+            <input id="{@input_name}" name="{@input_name}" type="checkbox"
+            />
+            <span>
+                <xsl:text> </xsl:text> <xsl:value-of select="@title"/>
+            </span>
+        </label>
+    </xsl:template>
+
+    <xsl:template match="field[@type = 'relation']" mode="wide-webforms_input_type">
+
+        <select name="{@input_name}" class="width-100 styler" data-z-index="9" data-placeholder="{@title}">
+            <xsl:if test="@multiple">
+                <xsl:attribute name="multiple">
+                    <xsl:text>multiple</xsl:text>
+                </xsl:attribute>
+            </xsl:if>
+            <option></option>
+            <xsl:apply-templates select="values/item" mode="wide-webforms_input_type"/>
+        </select>
+    </xsl:template>
+
+    <xsl:template match="item" mode="wide-webforms_input_type">
+        <option value="{@id}">
+            <xsl:if test="$page-name = ."><xsl:attribute name="selected">selected</xsl:attribute></xsl:if>
+            <xsl:call-template name="options">
+                <xsl:with-param name="id"><xsl:value-of select="@id"/></xsl:with-param>
+                <xsl:with-param name="title"><xsl:value-of select="."/></xsl:with-param>
+            </xsl:call-template>
+        </option>
+    </xsl:template>
+
+    <xsl:template match="field" mode="wide-webforms_required"/>
+
+    <xsl:template match="field[@required = 'required']" mode="wide-webforms_required">
+        <xsl:attribute name="class">
+            <xsl:text>required</xsl:text>
+        </xsl:attribute>
+    </xsl:template>
+
+    <xsl:template match="items" mode="wide-address">
+        <xsl:apply-templates select="item" mode="wide-address"/>
+    </xsl:template>
+
+    <xsl:template match="item" mode="wide-address">
+        <input type="hidden" name="system_email_to" value="{@id}"/>
+    </xsl:template>
+
+    <xsl:template match="items[count(item) &gt; 1]" mode="wide-address">
+        <xsl:choose>
+            <xsl:when test="count(item[@selected='selected']) != 1">
+                <div class="form_element">
+                    <label class="required">
+                        <span>
+                            <xsl:text>Кому отправить:</xsl:text>
+                        </span>
+                        <select name="system_email_to">
+                            <option value=""></option>
+                            <xsl:apply-templates select="item" mode="wide-address_select"/>
+                        </select>
+                    </label>
+                </div>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates select="item[@selected='selected']" mode="wide-address"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <xsl:template match="item" mode="wide-address_select">
+        <option value="{@id}">
+            <xsl:apply-templates/>
+        </option>
+    </xsl:template>
+
+    <xsl:template match="value" mode="wide-contents">
+        <div class="col-xs-12 clearfix">
+            <xsl:value-of select="." disable-output-escaping="yes"/>
+        </div>
+    </xsl:template>
+</xsl:stylesheet>

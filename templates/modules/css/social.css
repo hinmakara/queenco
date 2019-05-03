@@ -1,0 +1,25 @@
+.addthis-smartlayers{margin-left: 10px;}
+.atss a{width: 2.5pc;height:2.5pc;background: none;}
+
+.atss a:hover{width: 2.5pc;}
+.atss a span .at-icon{width: 2pc;
+    height: 2pc;}
+.atss a .at-icon-wrapper{padding: 5px}
+.atss a:hover .at-icon-wrapper{padding: 5px;}
+.at-icon{fill: #ccc}
+.atss a:hover .at-icon{fill: #333}
+.at4-scc{visibility: hidden}
+
+.scroll-to{position: relative;
+    display: block;*
+    border: none;
+    width: 2.5pc;height:2.5pc;
+    margin: 0;
+    outline: 0;
+    text-align: center;
+    -webkit-transition: width .15s ease-in-out;
+    transition: width .15s ease-in-out;
+    overflow: hidden;
+    z-index: 100030}
+
+.scroll-to i.fa.fa-angle-up{font-size: 2pc}

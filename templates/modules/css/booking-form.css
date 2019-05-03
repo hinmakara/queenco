@@ -1,0 +1,173 @@
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+
+.form * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 60;
+}
+
+.form .row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.form .row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form .row > .col {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.form .row.cols-3 > .col {
+    width: 33.33%;
+}
+
+.form .field {
+    display: inline-block;
+    position: relative;
+}
+
+.form .label {
+    position: absolute;
+    left: 0;
+    top: -22px;
+}
+
+.form .input-text,
+.form .input-select {
+    height: 30px;
+    line-height: 28px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.form .button {
+    display: inline-block;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    border: 0;
+    background-color: #7d1016;
+    color: #fff;
+    cursor: pointer;
+    width: auto;
+}
+
+.form .button:hover {
+    background-color: #333;
+}
+
+.datepicker-icon:after {
+    content: '\f073';
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    pointer-events: none;
+    cursor: default;
+    color: #7d1016;
+}
+
+
+
+/* Vertical Style */
+.form.form-vertical {
+    max-width: 280px; /* ปรับความกว้าง */
+
+    padding: 15px;
+    background-color: #000000;
+    border: 1px solid #ccc;
+}
+
+.form.form-vertical .form-group {
+    margin-bottom: 10px;
+}
+
+.form.form-vertical .form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.form.form-vertical .field {
+    width: 100%;
+}
+
+.form.form-vertical .input-text,
+.form.form-vertical .input-select,
+.form.form-vertical .button {
+    width: 100%;
+}
+
+
+
+/* Horizon Style */
+section#horizon_booking{
+    width: 100%;
+    background-color: white;
+    margin: 20px 0;
+    z-index: 55;
+    padding-left: 2%;
+    padding-right: 2%
+}
+section#horizon_booking.affix{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+margin: 0;
+   }
+section#horizon_booking.affix-bottom{
+position: absolute;
+   }
+
+section#horizon_booking .form .button {
+    display: inline-block;
+    text-align: center;
+    line-height: 15px;
+    height: 30px;
+    border: 0;
+    background-color: #7d1016;
+    color: #fff;
+    cursor: pointer;
+    width: auto;
+}
+section#horizon_booking input,section#horizon_booking select{width: 100%}
+section#horizon_booking a{text-decoration: underline;margin-top: 10px}
+.form.form-horizon .field {
+    padding: 0 5px 0 0px;
+    margin: 0;
+    display: block;
+
+}
+.form.form-horizon .form-group{
+    padding: 5px 5px 0 0px;
+    margin: 0;
+}
+
+.form.form-horizon
+{border-top: 1px solid #dedede;
+    padding: 1em;
+    border-bottom: 1px solid #dedede
+}
+/* Form with Label */
+.form.form-with-label {
+    padding-top: 22px
+}
+@media (min-width: 0px) and (max-width:768px) {
+    .form.form-horizon{
+        padding: .5em 0em;
+    }
+
+}

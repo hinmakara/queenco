@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,100&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Lora:400italic,700italic&subset=latin,cyrillic);
+/*----------------------------------------------
+0. RESET & CLEARFIX
+------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+
+.description ul, footer ul, header ul  { list-style: none}
+ul {display: inline-block; margin-left: 10px;}
+:focus  { outline: 0; }
+
+/* deleting the default appearence for form elements */
+input[type=text], input[type=password], input[type=submit], textarea, select { -moz-appearance: none; -webkit-appearance: none; }
+
+.clearfix:after { content: ""; display: block; clear: both; visibility: hidden; font-size: 0;  height: 0; }
+.clearfix { *display: inline-block; height: 1%; }
+.clear { clear: both; display: block; font-size: 0;	height: 0; line-height: 0; width:100%; }
+
+/* HTML5 display definitions */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, dialog { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; visibility: hidden; }
+
+
+
+/*----------------------------------------------
+1. BASICS
+------------------------------------------------*/
+html {
+    height: 100%;
+    font-size: 100%;
+    /*overflow-y: scroll; /* Force a scrollbar in non-IE */
+    /*overflow-x: hidden;*/
+    -webkit-text-size-adjust: 100%; /* Prevent iOS text size adjust on orientation change without disabling user zoom */
+    -ms-text-size-adjust: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+    text-align: left;
+    position: relative;
+    background-color: #FFF;
+    height: 100%;
+}
+::selection { background:#ffe49c; color:#262626; }
+::-moz-selection { background:#ffe49c; color:#262626; }
+::-webkit-selection { background:#ffe49c; color:#262626; }
+
+
+
+
+/* Headings
+---------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0em;
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+.text-light h1, .text-light h2, .text-light h3, .text-light h4, .text-light h5, .text-light h6 { color: #ffffff; }
+
+h1 { font-size: 100px; line-height: 130px; }
+h2 { font-size: 40px; line-height: 60px; }
+h3 { font-size: 32px; line-height: 48px; }
+h4 { font-size: 22px; line-height: 34px; }
+h5 { font-size: 18px; line-height: 26px; }
+h6 { font-size: 16px; line-height: 22px; }
+
+h1 b, h2 b, h3 b, h4 b, h5 b, h6 b, h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong { font-weight: 700; }
+.underline{ background: url("../images/line_g.png") no-repeat center bottom;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;}
+/* Headers Spacing */
+div h1, div h2, div h3, div h4, div h5, div h6 { margin-top: 20px; }
+
+.subtitle { margin-top: 5px; font-weight: 300; color: #666666; letter-spacing: 0.04em; }
+.text-light .subtitle { opacity: 0.9; filter: alpha(opacity=90);	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; }
+
+.pull-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.pull-right {
+    float: right !important
+}
+
+.pull-left {
+    float: left !important
+}
+
+sup{left: -0.3em}
+
+.no-margin{margin: 0}
+.no-padding{padding: 0}
+
+table {
+
+    font-size: 14px;
+    background: white;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+th {
+    font-weight: normal;
+    border-bottom: 2px solid #6678b1;
+    padding: 10px 8px;
+}
+td {
+    border-bottom: 1px solid #ccc;
+    padding: 9px 8px;
+    transition: .3s linear;
+}
+
+tr:hover td{
+    color: #4da5f5;
+}
